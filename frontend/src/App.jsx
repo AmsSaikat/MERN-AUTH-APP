@@ -8,7 +8,7 @@ import EmailVerificationPage from './pages/EmailVerificationPage';
 import ResetPasswordPage from './pages/ResetPasswordPage';
 import HomePage from './pages/HomePage';
 import ForgetPasswordPage from './pages/ForgetPasswordPage';
-import { useAuthStore } from './store/AuthStore';
+import { useAuthStore } from './store/authStore.js'
 
 // Protect routes that require authentication (verified users only)
 const ProtectRoute = ({ children }) => {
