@@ -8,11 +8,11 @@ import EmailVerificationPage from './pages/EmailVerificationPage';
 import ResetPasswordPage from './pages/ResetPasswordPage';
 import HomePage from './pages/HomePage';
 import ForgetPasswordPage from './pages/ForgetPasswordPage';
-import { useAuthStore } from './store/authStore.js'
+import { useAuthStore } from './store/AuthStore';
 
 // Protect routes that require authentication (verified users only)
 const ProtectRoute = ({ children }) => {
-  const { isAuthenticated, user, loading } = useAuthStore();
+  const { isAuthenticated, user, loading } = useAuthStore()
 
   if (loading) return <div className="text-white text-xl">Checking authentication...</div>;
 
